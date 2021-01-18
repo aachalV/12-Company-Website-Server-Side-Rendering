@@ -11,7 +11,7 @@ export default function Section({ section }) {
         <div className={styles["section-container"]}>
           {section.sectionContent.map((content) => {
             return (
-              <div className={styles["section-content"]}>
+              <div className={styles["section-content"]} key={content.id}>
                 <h2>{content.subHeading}</h2>
                 <p>{content.content}</p>
               </div>

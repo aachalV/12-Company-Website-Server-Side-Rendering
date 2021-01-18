@@ -23,7 +23,7 @@ export default function Navigation({ navigationLinks }) {
         })}
 
         <Link href={navigationLinks.contactUs.href}>
-          <a>Contact Us</a>
+          <button>Contact Us</button>
         </Link>
       </div>
     </div>
