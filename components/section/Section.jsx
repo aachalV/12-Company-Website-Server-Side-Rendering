@@ -1,6 +1,4 @@
-import styles from "../section/Section.module.css";
-
-export default function Section({ section }) {
+export default function Section({ styles, section }) {
   return (
     <section className={styles["section"]}>
       <h1>{section.sectionHeading}</h1>

@@ -6,9 +6,9 @@ import Section from "../components/section/Section";
 export default function Surfboard({ data }) {
   return (
     <div>
-      <Navigation navigationLinks={data[0].navigationLinks} />
-      <Header header={data[0].header} />
-      <Section section={data[0].section} />
+      <Navigation styles={styles} navigationLinks={data[0].navigationLinks} />
+      <Header styles={styles} header={data[0].header} />
+      <Section styles={styles} section={data[0].section} />
     </div>
   );
 }

@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
-import styles from "../navigation/Navigation.module.css";
-
-export default function Navigation({ navigationLinks }) {
+export default function Navigation({ styles, navigationLinks }) {
   return (
     <div id="nav" className={styles["navbar"]}>
       <div>

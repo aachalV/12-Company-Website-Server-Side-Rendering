@@ -1,6 +1,4 @@
-import styles from "../header/Header.module.css";
-
-export default function Header({ header }) {
+export default function Header({ styles, header }) {
   return (
     <header className={styles["header"]}>
       <div className={styles["banner-image"]}>
