@@ -24,7 +24,7 @@ export default function Footer() {
         </a>
       </div>
       <a id="upArrow" href="#nav">
-        <img src="https://img.icons8.com/fluent/48/000000/logout-rounded-up.png" />
+        <img src="https://img.icons8.com/fluent/45/000000/logout-rounded-up.png" />
       </a>
     </footer>
   );
