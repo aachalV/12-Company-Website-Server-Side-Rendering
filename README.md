@@ -22,6 +22,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
       Footer with social media icons and related links
    
    * Navigation is enabled using next.js folder structure.
+   * Pages receive props containing JSON data of that particular page which is again sent as a props to Navigation, Header and Section Components.
    
    
 ## Deployment
