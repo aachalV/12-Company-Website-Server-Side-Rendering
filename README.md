@@ -35,7 +35,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
     1. Clone the repository using
     ```
-    git clone 
+    git clone https://github.com/aachalV/12-Company-Website-Server-Side-Rendering.git
     ```
     After downloading , 
     2. Get into the cloned directory using
