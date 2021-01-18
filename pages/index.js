@@ -1,12 +1,14 @@
 import styles from "../styles/Surfboard.module.css";
 import Navigation from "../components/navigation/Navigation";
 import Header from "../components/header/Header";
+import Section from "../components/section/Section";
 
 export default function Surfboard({ data }) {
   return (
     <div>
       <Navigation navigationLinks={data[0].navigationLinks} />
       <Header header={data[0].header} />
+      <Section section={data[0].section} />
     </div>
   );
 }
