@@ -25,12 +25,13 @@
   color: #26d0ce;
 }
 .navbar button {
-  padding: 14px 40px;
+  padding: 8px 30px;
   background-color: #26d0ce;
   color: whitesmoke;
   border: none;
   border-radius: 25px;
   font-size: 16px;
+  max-width: 160px;
 }
 .navbar button:hover {
   cursor: pointer;
@@ -41,8 +42,11 @@
   .navbar {
     flex-direction: column;
   }
+
   .navbar .nav-links {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -94,7 +98,7 @@
 }
 .section-image {
   flex: 50%;
-  margin: 300px 0;
+  margin: 250px 0;
 }
 .section-image img {
   width: 100%;
