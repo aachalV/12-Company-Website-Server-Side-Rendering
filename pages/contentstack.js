@@ -16,7 +16,9 @@ export default function Surfboard({ data }) {
 }
 
 export async function getStaticProps() {
-  const response = await fetch("http://localhost:5000/companyList/company/cs");
+  const response = await fetch(
+    "https://backend-company-ssr-12.herokuapp.com/companyList/company/cs"
+  );
   const companyData = await response.json();
   return { props: { ...companyData } };
 }
