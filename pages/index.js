@@ -1,13 +1,16 @@
 import styles from "../styles/Surfboard.module.css";
+import Navigation from "../components/navigation/Navigation";
 
 export default function Surfboard({ data }) {
-  console.log("data>>", data[0].navigationLinks);
-  return <div>Checking</div>;
+  return (
+    <div>
+      <Navigation navigationLinks={data[0].navigationLinks} />
+    </div>
+  );
 }
 
 export async function getStaticProps() {
   const response = await fetch("http://localhost:5000/companyList/company");
   const companyData = await response.json();
-  console.log("companyData>>", { ...companyData });
   return { props: { ...companyData } };
 }
