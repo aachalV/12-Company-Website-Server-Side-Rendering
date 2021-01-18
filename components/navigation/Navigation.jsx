@@ -1,8 +1,9 @@
-import styles from "../navigation/Navigation.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
+import styles from "../navigation/Navigation.module.css";
+
 export default function Navigation({ navigationLinks }) {
-  console.log(navigationLinks.links[0].display);
   return (
     <div id="nav" className={styles["navbar"]}>
       <div>
@@ -21,7 +22,9 @@ export default function Navigation({ navigationLinks }) {
           );
         })}
 
-        <a href="#contact">ContactUs</a>
+        <Link href={navigationLinks.contactUs.href}>
+          <a>Contact Us</a>
+        </Link>
       </div>
     </div>
   );
