@@ -1,14 +1,63 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+  * This application implements the concept of server side rendering and navigation for single page application. 
+  * The framework used is next.js. 
+  * The application renders three pages for the following companies
+    1. Raw Engineering
+    2. Contentstack
+    3. Surfboard Ventures
+    
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  * For each company there is a landing page with different style and theme. 
+  * Design of web page contains following components
+
+      Navigation link 
+      > (for Surfboard will contain Raw Engineering, Contentstack)
+      
+      Home
+      Main body content with banner image
+      Footer with social media icons and related links
+   
+   * Navigation is enabled using next.js folder structure.
+   
+   
+## Deployment
+
+  * The data for company information is stored on an express server hosted on Heroku (https://backend-company-ssr-12.herokuapp.com/).
+  
+  * This application is currently hosted on Vercel 
+      Live demo can be seen here (https://12-company-website-server-side-rendering.vercel.app/)
+      
+## To run the project locally
+
+    1. Clone the repository using
+    ```
+    git clone 
+    ```
+    After downloading , 
+    2. Get into the cloned directory using
+    ```
+    cd 12-Company-Website-Server-Side-Rendering
+
+    ```
+    Once inside directory 
+    3. run
+    ```
+    npm run build
+    ```
+
+    Once build file is created 
+    4. run
+    ```
+    npm run start
+    ```
+    > To run project in development mode run
+    > npm run dev
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -32,3 +81,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+  
