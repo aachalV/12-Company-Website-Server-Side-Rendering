@@ -2,6 +2,7 @@ import styles from "../styles/Surfboard.module.css";
 import Navigation from "../components/navigation/Navigation";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
+import Footer from "../components/footer/Footer";
 
 export default function Surfboard({ data }) {
   return (
@@ -9,6 +10,7 @@ export default function Surfboard({ data }) {
       <Navigation styles={styles} navigationLinks={data[0].navigationLinks} />
       <Header styles={styles} header={data[0].header} />
       <Section styles={styles} section={data[0].section} />
+      <Footer styles={styles} />
     </div>
   );
 }
